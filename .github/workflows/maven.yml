@@ -18,4 +18,5 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
+      working-directory: /Boardgame-main
       run: mvn -B package --file pom.xml
