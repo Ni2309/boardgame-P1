@@ -17,7 +17,4 @@ jobs:
           cache: maven
       - name: Compile
         working-directory: Boardgame-main
-        run: mvn -B clean package | 
-          mvn compile
-          mvn test
-          mvn package
+        run: mvn -B clean package
