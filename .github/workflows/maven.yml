@@ -5,7 +5,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  compile:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -17,7 +17,7 @@ jobs:
           cache: maven
       - name: Compile
         working-directory: Boardgame-main
-        run: | 
-        mvn -B compile
-        mvn -B test
-        mvn -B package
+        run: mvn -B clean package | 
+          mvn compile
+          mvn test
+          mvn package
