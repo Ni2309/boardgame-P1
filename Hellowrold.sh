@@ -1,2 +1,3 @@
 #!/bin/bash
-echo "Welcome to the world of devops"
+env=$1
+echo "I am the number $env in DevOps"
