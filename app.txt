@@ -1,1 +1,1 @@
-Add login page UI
+Login from the fields
